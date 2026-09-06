@@ -67,15 +67,15 @@ function HeroContent() {
         <span className="block overflow-hidden">
           <span className="hero-word block">GRAND THEFT</span>
         </span>
-        <span className="block overflow-hidden text-accent">
+        <span className="block overflow-hidden gta-gradient-text">
           <span className="hero-word block">AUTO VI</span>
         </span>
       </h1>
 
       <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
         <p className="hero-sub max-w-sm text-sm leading-relaxed text-muted-foreground md:text-base">
-          A cinematic fan tribute. Scroll to move through the footage — every frame is tied to
-          your scroll position.
+          A cinematic fan tribute. Scroll to move through the footage — every frame is tied to your
+          scroll position.
         </p>
         <p className="hero-hint font-mono text-[0.6rem] uppercase tracking-[0.5em] text-foreground/70">
           Scroll ↓
@@ -172,7 +172,7 @@ function SecondVideoContent({ ready }: { ready: boolean }) {
       <p className="v2-line-a font-display text-[clamp(2rem,9vw,10rem)] leading-[0.85] tracking-[-0.04em] text-foreground">
         NO WAY BACK
       </p>
-      <p className="v2-line-b self-end text-right font-mono text-[0.65rem] uppercase leading-loose tracking-[0.5em] text-accent md:max-w-xs">
+      <p className="v2-line-b self-end text-right font-mono text-[0.65rem] uppercase leading-loose tracking-[0.5em] gta-gradient-text font-bold md:max-w-xs">
         Jason and Lucia are drawn into a criminal conspiracy across Leonida
       </p>
     </div>

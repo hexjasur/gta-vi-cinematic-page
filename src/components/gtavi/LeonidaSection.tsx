@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import leonidaImage from "@/assets/leonida.jpg";
+import leonidaImage from "@/assets/leonida.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -74,7 +74,7 @@ export function LeonidaSection() {
               <span className="block overflow-hidden">
                 <span className="leonida-word block">ONLY IN</span>
               </span>
-              <span className="block overflow-hidden text-accent">
+              <span className="block overflow-hidden gta-gradient-text">
                 <span className="leonida-word block">LEONIDA</span>
               </span>
             </h2>

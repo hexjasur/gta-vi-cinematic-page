@@ -101,7 +101,7 @@ export function GTAVIStory() {
       <div className="mx-auto max-w-[1500px]">
         <div className="story-head max-w-4xl">
           <div className="overflow-hidden">
-            <p className="story-eyebrow font-mono text-[0.65rem] uppercase tracking-[0.6em] text-accent">
+            <p className="story-eyebrow font-mono text-[0.65rem] uppercase tracking-[0.6em] gta-gradient-text">
               The story
             </p>
           </div>
@@ -109,7 +109,7 @@ export function GTAVIStory() {
             <span className="block overflow-hidden">
               <span className="story-title-line block">TWO PEOPLE.</span>
             </span>
-            <span className="block overflow-hidden text-accent">
+            <span className="block overflow-hidden gta-gradient-text">
               <span className="story-title-line block">ONE STATE.</span>
             </span>
           </h2>
@@ -148,7 +148,7 @@ export function GTAVIStory() {
               Platforms
             </p>
             <p className="mt-4 font-display text-[clamp(1.25rem,2.6vw,2.5rem)] leading-tight tracking-[0.02em] text-foreground">
-              PLAYSTATION 5<span className="text-accent"> / </span>XBOX SERIES X|S
+              PLAYSTATION 5<span className="gta-gradient-text"> / </span>XBOX SERIES X|S
             </p>
           </div>
         </div>

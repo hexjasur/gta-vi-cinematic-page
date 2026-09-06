@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import jasonImage from "@/assets/jason.jpg";
-import luciaImage from "@/assets/lucia.jpg";
+import jasonImage from "@/assets/Jason.webp";
+import luciaImage from "@/assets/Lucia.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -108,7 +108,7 @@ export function CharactersSection() {
   return (
     <section ref={rootRef} id="characters" className="relative bg-background px-6 py-28 md:px-14 md:py-40">
       <div className="mx-auto max-w-[1500px]">
-        <p className="font-mono text-[0.65rem] uppercase tracking-[0.6em] text-accent">
+        <p className="font-mono text-[0.65rem] uppercase tracking-[0.6em] gta-gradient-text">
           The protagonists
         </p>
 
@@ -128,14 +128,14 @@ export function CharactersSection() {
                   className="character-image h-full w-full object-cover grayscale-[0.35] transition-[filter,transform] duration-[1200ms] ease-out group-hover:grayscale-0 group-hover:brightness-110"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,var(--overlay-deep),transparent_55%)]" />
-                <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-700 group-hover:opacity-100 bg-[linear-gradient(to_top,color-mix(in_oklab,var(--accent)_28%,transparent),transparent_60%)]" />
+                <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-700 group-hover:opacity-100 bg-[linear-gradient(to_top,color-mix(in_oklab,var(--gradient-vice-end)_30%,transparent),color-mix(in_oklab,var(--gradient-vice-mid)_18%,transparent)_35%,color-mix(in_oklab,var(--gradient-vice-start)_12%,transparent)_60%,transparent_75%)]" />
               </div>
 
               <h3 className="mt-8 font-display text-[clamp(2.25rem,6vw,5.5rem)] leading-[0.85] tracking-[-0.02em] text-foreground">
                 <span className="block overflow-hidden">
                   <span className="character-line block">{character.first}</span>
                 </span>
-                <span className="block overflow-hidden text-accent">
+                <span className="block overflow-hidden gta-gradient-text">
                   <span className="character-line block">{character.last}</span>
                 </span>
               </h3>

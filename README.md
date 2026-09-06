@@ -1,5 +1,9 @@
 # Vice City Chronicles
 
+## SEO deployment
+
+Set `VITE_SITE_URL` to the real production URL before deploying. It powers the canonical URL, Open Graph URL, and JSON-LD metadata. Update the same host in `public/sitemap.xml`, then submit `/sitemap.xml` in Google Search Console after the site is live.
+
 Create a **PREMIUM cinematic GTA VI fan page as a SINGLE React + TypeScript page** that can be copied directly into an existing **Tauri + React** app.
 
 ### RULES

@@ -4,20 +4,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/*
- * Design system definition.
- *
- * The @theme inline block maps CSS custom properties to Tailwind utility
- * classes (e.g. --color-primary -> bg-primary, text-primary).
- *
- * The :root and .dark blocks define the actual color values using oklch.
- * All colors MUST use oklch format.
- *
- * To add a new semantic color:
- * 1. Add the variable to :root (light value) and .dark (dark value)
- * 2. Register it in @theme inline as --color-<name>: var(--<name>)
- */
-
 @theme inline {
   --font-display: "Anton", "Arial Narrow", sans-serif;
   --font-sans: "Barlow", system-ui, sans-serif;
@@ -67,40 +53,46 @@
 
 :root {
   --radius: 0rem;
-  /* Cinematic night palette: near-black base, warm ember accent. */
-  --background: oklch(0.11 0.008 60);
-  --foreground: oklch(0.95 0.012 80);
-  --card: oklch(0.15 0.01 60);
-  --card-foreground: oklch(0.95 0.012 80);
-  --popover: oklch(0.15 0.01 60);
-  --popover-foreground: oklch(0.95 0.012 80);
-  --primary: oklch(0.95 0.012 80);
-  --primary-foreground: oklch(0.11 0.008 60);
-  --secondary: oklch(0.2 0.012 60);
-  --secondary-foreground: oklch(0.95 0.012 80);
-  --muted: oklch(0.2 0.012 60);
-  --muted-foreground: oklch(0.66 0.02 70);
-  --accent: oklch(0.72 0.17 55);
-  --accent-foreground: oklch(0.11 0.008 60);
-  --destructive: oklch(0.6 0.22 25);
+  /* Vice City palitra: to'q binafsha-ko'k tun foni, pushti/orange sunset urg'usi. */
+  --background: oklch(0.14 0.04 300);
+  --foreground: oklch(0.97 0.015 60);
+  --card: oklch(0.19 0.05 300);
+  --card-foreground: oklch(0.97 0.015 60);
+  --popover: oklch(0.19 0.05 300);
+  --popover-foreground: oklch(0.97 0.015 60);
+  --primary: oklch(0.68 0.26 350);
+  --primary-foreground: oklch(0.98 0.01 60);
+  --secondary: oklch(0.26 0.06 290);
+  --secondary-foreground: oklch(0.97 0.015 60);
+  --muted: oklch(0.26 0.06 290);
+  --muted-foreground: oklch(0.72 0.05 300);
+  --accent: oklch(0.75 0.19 55);
+  --accent-foreground: oklch(0.14 0.04 300);
+  --destructive: oklch(0.62 0.23 25);
   --destructive-foreground: oklch(0.97 0.01 80);
-  --border: oklch(0.28 0.012 60);
-  --input: oklch(0.28 0.012 60);
-  --ring: oklch(0.72 0.17 55);
-  --overlay-deep: oklch(0.08 0.008 60 / 0.92);
-  --chart-1: oklch(0.72 0.17 55);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.15 0.01 60);
-  --sidebar-foreground: oklch(0.95 0.012 80);
-  --sidebar-primary: oklch(0.72 0.17 55);
-  --sidebar-primary-foreground: oklch(0.11 0.008 60);
-  --sidebar-accent: oklch(0.2 0.012 60);
-  --sidebar-accent-foreground: oklch(0.95 0.012 80);
-  --sidebar-border: oklch(0.28 0.012 60);
-  --sidebar-ring: oklch(0.72 0.17 55);
+  --border: oklch(0.32 0.06 290);
+  --input: oklch(0.32 0.06 290);
+  --ring: oklch(0.68 0.26 350);
+  --overlay-deep: oklch(0.1 0.04 300 / 0.92);
+
+  /* Vice City gradient bosqichlari: binafsha -> pushti -> sariq */
+  --gradient-vice-start: oklch(0.45 0.19 290);
+  --gradient-vice-mid: oklch(0.62 0.26 350);
+  --gradient-vice-end: oklch(0.78 0.19 55);
+
+  --chart-1: oklch(0.68 0.26 350);
+  --chart-2: oklch(0.6 0.22 300);
+  --chart-3: oklch(0.75 0.19 55);
+  --chart-4: oklch(0.7 0.2 25);
+  --chart-5: oklch(0.55 0.24 320);
+  --sidebar: oklch(0.19 0.05 300);
+  --sidebar-foreground: oklch(0.97 0.015 60);
+  --sidebar-primary: oklch(0.68 0.26 350);
+  --sidebar-primary-foreground: oklch(0.14 0.04 300);
+  --sidebar-accent: oklch(0.26 0.06 290);
+  --sidebar-accent-foreground: oklch(0.97 0.015 60);
+  --sidebar-border: oklch(0.32 0.06 290);
+  --sidebar-ring: oklch(0.68 0.26 350);
 }
 
 @layer base {
@@ -125,6 +117,29 @@
       scroll-behavior: auto;
     }
   }
+}
+
+/* GTA 6 / Vice City uslubidagi gradient utility ------------------------ */
+
+.gta-gradient-text {
+  background: linear-gradient(
+    180deg,
+    var(--gradient-vice-start) 0%,
+    var(--gradient-vice-mid) 50%,
+    var(--gradient-vice-end) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gta-gradient-bg {
+  background: linear-gradient(
+    135deg,
+    var(--gradient-vice-start) 0%,
+    var(--gradient-vice-mid) 55%,
+    var(--gradient-vice-end) 100%
+  );
 }
 
 /* Cinematic overlays -------------------------------------------------- */
@@ -159,4 +174,3 @@
     transform: translate3d(0, 0, 0);
   }
 }
-

@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import art1 from "@/assets/art-1.jpg";
-import art2 from "@/assets/art-2.jpg";
-import art3 from "@/assets/art-3.jpg";
-import leonidaImage from "@/assets/leonida.jpg";
+import art1 from "@/assets/art-1-1.png";
+import art2 from "@/assets/art-2-2.jpg";
+import art3 from "@/assets/art-3-3.webp";
+import leonidaImage from "@/assets/leonida.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -124,7 +124,7 @@ export function ArtworkGallery() {
   return (
     <section ref={rootRef} id="artwork" className="relative overflow-hidden bg-background px-6 py-32 md:px-14 md:py-48">
       <div className="mx-auto max-w-[1500px]">
-        <p className="gallery-eyebrow font-mono text-[0.65rem] uppercase tracking-[0.6em] text-accent">
+        <p className="gallery-eyebrow font-mono text-[0.65rem] uppercase tracking-[0.6em] gta-gradient-text">
           Artwork
         </p>
 

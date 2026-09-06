@@ -72,7 +72,7 @@ export function GTAVIFinal() {
         <span className="block overflow-hidden">
           <span className="final-word block">THEFT</span>
         </span>
-        <span className="block overflow-hidden text-accent">
+        <span className="block overflow-hidden gta-gradient-text">
           <span className="final-word block">AUTO VI</span>
         </span>
       </h2>
@@ -84,7 +84,7 @@ export function GTAVIFinal() {
         <p className="final-date-line font-display text-[clamp(2.5rem,8vw,7rem)] leading-[0.85] tracking-[-0.02em] text-foreground">
           NOVEMBER 19
         </p>
-        <p className="final-date-line font-display text-[clamp(2.5rem,8vw,7rem)] leading-[0.85] tracking-[-0.02em] text-accent">
+        <p className="final-date-line font-display text-[clamp(2.5rem,8vw,7rem)] leading-[0.85] tracking-[-0.02em] gta-gradient-text">
           2026
         </p>
       </div>
@@ -92,6 +92,7 @@ export function GTAVIFinal() {
       <div className="final-footer relative mt-20 flex flex-col gap-4 border-t border-border pt-8 font-mono text-[0.6rem] uppercase tracking-[0.45em] text-muted-foreground md:flex-row md:items-center md:justify-between">
         <span>PlayStation 5 / Xbox Series X|S</span>
         <span>Fan-made tribute — not affiliated with Rockstar Games</span>
+        <span>© 2026 <span className="gta-gradient-text font-extrabold">Jasurbek Haydarov</span>, Github Source Code.</span>
       </div>
     </section>
   );

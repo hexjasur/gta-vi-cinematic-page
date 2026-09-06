@@ -12,6 +12,8 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
+const siteName = "Grand Theft Auto VI: Only in Leonida";
+
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -77,14 +79,30 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: siteName },
+      {
+        name: "description",
+        content:
+          "Explore a cinematic Grand Theft Auto VI fan page set in Leonida and Vice City, featuring Jason Duval, Lucia Caminos, story details and official release information.",
+      },
+      { name: "author", content: siteName },
+      { name: "theme-color", content: "#0b0b0a" },
+      { name: "robots", content: "index, follow, max-image-preview:large" },
+      { property: "og:site_name", content: siteName },
+      { property: "og:title", content: siteName },
+      {
+        property: "og:description",
+        content:
+          "A cinematic fan experience exploring Grand Theft Auto VI, Leonida, Vice City, Jason and Lucia.",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:locale", content: "en_US" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: siteName },
+      {
+        name: "twitter:description",
+        content: "A cinematic Grand Theft Auto VI fan experience set in Leonida and Vice City.",
+      },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -99,7 +117,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
-
   }),
   shellComponent: RootShell,
   component: RootComponent,
