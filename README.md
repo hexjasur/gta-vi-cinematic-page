@@ -1,5 +1,7 @@
 # Vice City Chronicles
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5aaa6c7e-8379-40f0-9169-99d25ba95574/deploy-status)](https://app.netlify.com/projects/grand-theft-auto-vi/deploys)
+
 ## SEO deployment
 
 Set `VITE_SITE_URL` to the real production URL before deploying. It powers the canonical URL, Open Graph URL, and JSON-LD metadata. Update the same host in `public/sitemap.xml`, then submit `/sitemap.xml` in Google Search Console after the site is live.
@@ -332,25 +334,13 @@ All components must be fully implemented and imports must be explicit.
 
 **The scroll-controlled videos are the centerpiece. Prioritize cinematic scroll physics, typography, visual hierarchy, transitions and animation quality over generic landing-page UI.**
 
-This project was built with [Lovable](https://lovable.dev).
-
-**Live app**: https://gta-vi-cinematic-page.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/dee4a655-8dad-4181-bc01-1648ee828b9f).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
 ## Development
 
 Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
+git clone https://github.com/hexjasur/gta-vi-cinematic-page
+cd gta-vi-cinematic-page
 npm i
 npm run dev
 ```
